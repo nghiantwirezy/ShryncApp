@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="34" id="KGk-i7-Jjw" customClass="FollowingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPj-ax-27J">
+                        <rect key="frame" x="21" y="4" width="25" height="25"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtl-Ge-P9E">
+                        <rect key="frame" x="221" y="5" width="77" height="25"/>
+                        <color key="backgroundColor" red="0.0" green="0.6899856204" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title=" Follow ">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B38-qo-yB8">
+                        <rect key="frame" x="60" y="6" width="153" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ny-C6-RSO" userLabel="Separator View">
+                        <rect key="frame" x="0.0" y="32" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ZNe-Ta-Hfz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2ny-C6-RSO" secondAttribute="trailing" id="bea-p7-frV"/>
+                    <constraint firstAttribute="bottom" secondItem="2ny-C6-RSO" secondAttribute="bottom" id="owJ-SR-EiE"/>
+                    <constraint firstItem="2ny-C6-RSO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yTO-gF-H4p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentFollowingCell" destination="H2p-sc-9uM" id="W4a-pq-g5k"/>
+                <outlet property="followingCellButton" destination="dtl-Ge-P9E" id="M7z-EC-Y4C"/>
+                <outlet property="imageUserFollowing" destination="CPj-ax-27J" id="WMC-KJ-F41"/>
+                <outlet property="labelUserFollowing" destination="B38-qo-yB8" id="olh-y4-Bwm"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="146"/>
+        </tableViewCell>
+    </objects>
+</document>

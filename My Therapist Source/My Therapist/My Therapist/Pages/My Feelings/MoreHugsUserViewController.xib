@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreHugsUserViewController">
+            <connections>
+                <outlet property="hugsUserContentTableView" destination="tPc-Tm-xGI" id="N0L-MG-7kC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="kZN-Ax-9lU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="94" width="320" height="416"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YgD-TW-eg1" userLabel="Hugs User Content">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                    <subviews>
+                        <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tPc-Tm-xGI">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                            <color key="separatorColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <inset key="separatorInset" minX="35" minY="0.0" maxX="25" maxY="0.0"/>
+                            <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="yji-GC-TU6"/>
+                                <outlet property="delegate" destination="-1" id="Jr2-NM-uxn"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tPc-Tm-xGI" secondAttribute="trailing" id="PDG-TH-oY5"/>
+                        <constraint firstAttribute="bottom" secondItem="tPc-Tm-xGI" secondAttribute="bottom" id="qQq-dV-6Hz"/>
+                        <constraint firstItem="tPc-Tm-xGI" firstAttribute="leading" secondItem="YgD-TW-eg1" secondAttribute="leading" id="upN-N8-yv8"/>
+                        <constraint firstItem="tPc-Tm-xGI" firstAttribute="top" secondItem="YgD-TW-eg1" secondAttribute="top" id="wWL-ev-Of0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YgD-TW-eg1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LAP-uq-9fm"/>
+                <constraint firstAttribute="trailing" secondItem="YgD-TW-eg1" secondAttribute="trailing" id="eFK-ie-Ohd"/>
+                <constraint firstAttribute="bottom" secondItem="YgD-TW-eg1" secondAttribute="bottom" id="hoA-dh-PvC"/>
+                <constraint firstItem="YgD-TW-eg1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vMw-Lx-pUg"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="18" y="-101"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

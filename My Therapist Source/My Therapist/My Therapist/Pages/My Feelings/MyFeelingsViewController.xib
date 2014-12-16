@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyFeelingsViewController">
+            <connections>
+                <outlet property="feelingTableView" destination="nB1-Al-uDM" id="2Hk-VG-jhA"/>
+                <outlet property="headerContainerView" destination="CEP-hZ-NR7" id="6qL-B0-ev3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y82-NL-0GP" userLabel="Outer Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEP-hZ-NR7" userLabel="Avatar Container View">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="95" id="MAU-Dc-l3b"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nB1-Al-uDM" userLabel="Feelings Table View">
+                            <rect key="frame" x="0.0" y="95" width="320" height="409"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Oeg-T5-Mga"/>
+                                <outlet property="delegate" destination="-1" id="yA6-sW-IDE"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nB1-Al-uDM" secondAttribute="trailing" id="GLj-MY-ZzY"/>
+                        <constraint firstItem="nB1-Al-uDM" firstAttribute="top" secondItem="CEP-hZ-NR7" secondAttribute="bottom" id="Mgh-Fi-SYf"/>
+                        <constraint firstItem="nB1-Al-uDM" firstAttribute="leading" secondItem="y82-NL-0GP" secondAttribute="leading" id="TSZ-Dv-Vre"/>
+                        <constraint firstItem="CEP-hZ-NR7" firstAttribute="top" secondItem="y82-NL-0GP" secondAttribute="top" id="VTs-iC-ogM"/>
+                        <constraint firstAttribute="trailing" secondItem="CEP-hZ-NR7" secondAttribute="trailing" id="iki-e4-z77"/>
+                        <constraint firstItem="CEP-hZ-NR7" firstAttribute="leading" secondItem="y82-NL-0GP" secondAttribute="leading" id="t55-eP-2hh"/>
+                        <constraint firstAttribute="bottom" secondItem="nB1-Al-uDM" secondAttribute="bottom" id="x6J-NK-QAH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="y82-NL-0GP" secondAttribute="bottom" id="8gS-TY-pqh"/>
+                <constraint firstItem="y82-NL-0GP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kvg-oh-Nyu"/>
+                <constraint firstItem="y82-NL-0GP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="op9-NG-Gzq"/>
+                <constraint firstAttribute="trailing" secondItem="y82-NL-0GP" secondAttribute="trailing" id="zPY-qZ-uaO"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

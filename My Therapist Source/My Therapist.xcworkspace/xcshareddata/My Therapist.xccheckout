@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B71AE2D6-72F9-4552-B227-E8AE891CFC9B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>My Therapist</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>01C2DFDBC24465A89CAA24276DE4E0721CA05215</key>
+		<string>https://github.com/BHTechMobile/Shrync.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>10.Source/Trunk/My Therapist Source/My Therapist.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>01C2DFDBC24465A89CAA24276DE4E0721CA05215</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BHTechMobile/Shrync.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>01C2DFDBC24465A89CAA24276DE4E0721CA05215</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>01C2DFDBC24465A89CAA24276DE4E0721CA05215</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Shrync</string>
+		</dict>
+	</array>
+</dict>
+</plist>

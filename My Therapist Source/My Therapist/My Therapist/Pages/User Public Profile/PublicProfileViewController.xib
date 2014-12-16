@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PublicProfileViewController">
+            <connections>
+                <outlet property="checkinsView" destination="lwC-WC-8Ep" id="VkG-yE-CdT"/>
+                <outlet property="contentTableView" destination="iml-qL-LXO" id="MU7-dg-t0d"/>
+                <outlet property="contentview" destination="lJv-sF-9Dc" id="0Sr-TL-hFG"/>
+                <outlet property="followersView" destination="XoN-e6-Vpk" id="Cmq-Pg-mFe"/>
+                <outlet property="followingsView" destination="ltE-M8-peC" id="rsd-ZV-2PT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJv-sF-9Dc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iml-qL-LXO" userLabel="Table View Checkins">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iml-qL-LXO" secondAttribute="trailing" id="Que-0G-fUr"/>
+                        <constraint firstItem="iml-qL-LXO" firstAttribute="top" secondItem="lJv-sF-9Dc" secondAttribute="top" id="byc-a7-pZt"/>
+                        <constraint firstItem="iml-qL-LXO" firstAttribute="leading" secondItem="lJv-sF-9Dc" secondAttribute="leading" id="iB5-Tx-aa3"/>
+                        <constraint firstAttribute="bottom" secondItem="iml-qL-LXO" secondAttribute="bottom" id="zah-VU-d3q"/>
+                    </constraints>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwC-WC-8Ep" userLabel="View - Checkins">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoN-e6-Vpk" userLabel="View - Followers">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-M8-peC" userLabel="View - Followings">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ltE-M8-peC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1fh-eI-I8T"/>
+                <constraint firstAttribute="trailing" secondItem="lJv-sF-9Dc" secondAttribute="trailing" id="44R-cO-npL"/>
+                <constraint firstAttribute="bottom" secondItem="XoN-e6-Vpk" secondAttribute="bottom" id="6gl-x9-Fs3"/>
+                <constraint firstItem="lwC-WC-8Ep" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="96E-Je-2JW"/>
+                <constraint firstItem="ltE-M8-peC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B0f-Hd-h3v"/>
+                <constraint firstAttribute="trailing" secondItem="XoN-e6-Vpk" secondAttribute="trailing" id="Btp-TP-fnm"/>
+                <constraint firstItem="XoN-e6-Vpk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fbo-cT-hhf"/>
+                <constraint firstAttribute="bottom" secondItem="ltE-M8-peC" secondAttribute="bottom" id="KHB-wT-oBl"/>
+                <constraint firstItem="lJv-sF-9Dc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lc0-Go-FGH"/>
+                <constraint firstAttribute="bottom" secondItem="lwC-WC-8Ep" secondAttribute="bottom" id="ODc-Y5-UrF"/>
+                <constraint firstAttribute="trailing" secondItem="lwC-WC-8Ep" secondAttribute="trailing" id="Scg-AD-FDq"/>
+                <constraint firstAttribute="bottom" secondItem="lJv-sF-9Dc" secondAttribute="bottom" id="TpK-C9-Dv8"/>
+                <constraint firstItem="lwC-WC-8Ep" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fBP-CD-nhN"/>
+                <constraint firstItem="XoN-e6-Vpk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gPE-vd-7WA"/>
+                <constraint firstItem="lJv-sF-9Dc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tnv-zr-dae"/>
+                <constraint firstAttribute="trailing" secondItem="ltE-M8-peC" secondAttribute="trailing" id="ztP-Ja-hdW"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="190" y="206"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageAreaSelectionViewController">
+            <connections>
+                <outlet property="containerView" destination="4NP-tM-3xr" id="M1x-H2-NMY"/>
+                <outlet property="imageView" destination="CdF-Jf-GaO" id="5KA-rh-und"/>
+                <outlet property="touchCapturingView" destination="r03-Fc-b0K" id="C5m-k4-4it"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4NP-tM-3xr" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CdF-Jf-GaO">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r03-Fc-b0K" customClass="TouchCapturingView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="r03-Fc-b0K" firstAttribute="leading" secondItem="4NP-tM-3xr" secondAttribute="leading" placeholder="YES" id="270-VK-VxR"/>
+                        <constraint firstAttribute="trailing" secondItem="CdF-Jf-GaO" secondAttribute="trailing" id="5CG-FL-RRU"/>
+                        <constraint firstItem="r03-Fc-b0K" firstAttribute="top" secondItem="4NP-tM-3xr" secondAttribute="top" placeholder="YES" id="6Cj-Ki-NkY"/>
+                        <constraint firstItem="CdF-Jf-GaO" firstAttribute="leading" secondItem="4NP-tM-3xr" secondAttribute="leading" id="AXA-Rg-bDH"/>
+                        <constraint firstItem="CdF-Jf-GaO" firstAttribute="top" secondItem="4NP-tM-3xr" secondAttribute="top" id="VTF-lC-YHR"/>
+                        <constraint firstAttribute="trailing" secondItem="r03-Fc-b0K" secondAttribute="trailing" placeholder="YES" id="f0K-Zj-3Lt"/>
+                        <constraint firstAttribute="bottom" secondItem="r03-Fc-b0K" secondAttribute="bottom" placeholder="YES" id="jLI-bu-JtK"/>
+                        <constraint firstAttribute="bottom" secondItem="CdF-Jf-GaO" secondAttribute="bottom" id="vhO-IB-fTb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4NP-tM-3xr" secondAttribute="bottom" id="68c-J6-Oah"/>
+                <constraint firstItem="4NP-tM-3xr" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Ufo-ua-ACt"/>
+                <constraint firstItem="4NP-tM-3xr" firstAttribute="top" secondItem="1" secondAttribute="top" id="cTy-48-ECe"/>
+                <constraint firstAttribute="trailing" secondItem="4NP-tM-3xr" secondAttribute="trailing" id="pIZ-iL-cSl"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController">
+            <connections>
+                <outlet property="aboutButton" destination="McB-Jb-UJI" id="G8C-yG-mYz"/>
+                <outlet property="checkinPublicLabel" destination="eFQ-5T-kyK" id="xQp-J0-ovq"/>
+                <outlet property="contentContainerView" destination="GGS-Pt-nCo" id="zgi-vQ-kRk"/>
+                <outlet property="deleteAccountButton" destination="KI2-Ve-PIw" id="e4u-XR-qgb"/>
+                <outlet property="editProfileButton" destination="OoI-re-Mgj" id="vHG-jZ-RS2"/>
+                <outlet property="facebookConnectLabel" destination="XBn-Vv-ABG" id="XMK-M7-4EX"/>
+                <outlet property="facebookShareLabel" destination="QyA-xr-i8n" id="wwG-2N-gor"/>
+                <outlet property="feedbackButton" destination="qfw-6E-quV" id="i8g-Ij-ewx"/>
+                <outlet property="findFriendsButton" destination="Xzg-fv-1GN" id="nGB-U9-O64"/>
+                <outlet property="helpCheckinsPublicLabel" destination="ner-we-3p5" id="t9a-sB-veL"/>
+                <outlet property="helpConnectFbLabel" destination="a8A-SA-CF9" id="xB9-lf-fSH"/>
+                <outlet property="helpConnectTwLabel" destination="8HC-Am-Awa" id="Q2f-gT-SB8"/>
+                <outlet property="helpEditProfile" destination="udg-AX-YgA" id="6rL-jO-qEl"/>
+                <outlet property="helpProfilePublicLabel" destination="u2r-cb-H4c" id="Xx7-Uv-28I"/>
+                <outlet property="helpRateLabel" destination="kc4-HA-WZC" id="nip-LZ-Fqs"/>
+                <outlet property="helpShareShryncLabel" destination="BVJ-Yh-7Gm" id="va9-6T-erd"/>
+                <outlet property="privacyButton" destination="tYs-rp-GVP" id="cIa-lz-g3r"/>
+                <outlet property="profilePublicLabel" destination="opY-AF-8B2" id="MbP-vv-Zs9"/>
+                <outlet property="rateButton" destination="nJq-8q-YNm" id="Dbo-26-CEK"/>
+                <outlet property="shareFacebookButton" destination="a8J-qQ-ez7" id="kli-po-KhN"/>
+                <outlet property="shareTwitterButton" destination="z5g-fR-E0C" id="kdj-iB-ZSN"/>
+                <outlet property="shryncShareButton" destination="NdY-7u-89Q" id="zLh-13-jBY"/>
+                <outlet property="signoutButton" destination="Isi-mn-bfo" id="FnK-UM-mkn"/>
+                <outlet property="subviewFriends" destination="8AX-oe-DLe" id="ebi-yn-ClA"/>
+                <outlet property="subviewInformation" destination="g3R-3u-EBh" id="8WC-5B-K5b"/>
+                <outlet property="subviewProfile" destination="xqJ-uG-BhX" id="kl8-Sx-Yyn"/>
+                <outlet property="subviewRate" destination="wLp-U4-hzB" id="emX-uo-Jeu"/>
+                <outlet property="subviewShare" destination="9d6-lD-SaJ" id="leD-jN-SuH"/>
+                <outlet property="subviewSpFeedback" destination="5Z5-NM-W9F" id="yAU-9K-PUW"/>
+                <outlet property="supportButtonAction" destination="GYm-5t-26C" id="6BI-VK-7rG"/>
+                <outlet property="switchCheckinPublicButton" destination="Z8w-TO-iiX" id="kz4-jP-jy5"/>
+                <outlet property="switchProfilePublicButton" destination="ZqJ-vq-1kC" id="dIn-yk-ATh"/>
+                <outlet property="tableviewContent" destination="KJu-Y4-csj" id="5TN-E8-E7j"/>
+                <outlet property="termsofuseButton" destination="9Bh-1X-8z3" id="h7g-a3-I0K"/>
+                <outlet property="twitterConnectLabel" destination="eLl-CH-Svz" id="u4h-9C-anD"/>
+                <outlet property="twitterShareLabel" destination="X1K-Bf-Adz" id="iBF-rf-aeR"/>
+                <outlet property="versionAppButton" destination="vw6-JF-BCB" id="4Dp-a1-RPd"/>
+                <outlet property="versionLabel" destination="vfv-cW-5Ih" id="JKk-Hw-9Wg"/>
+                <outlet property="view" destination="fET-C9-ZYg" id="I3B-8X-JKc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fET-C9-ZYg">
+            <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGS-Pt-nCo" userLabel="Content Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfw-DP-gNk" userLabel="ContentTableView">
+                            <rect key="frame" x="25" y="15" width="270" height="347"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KJu-Y4-csj">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="347"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="separatorColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="sectionIndexColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="sectionIndexBackgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="sectionIndexTrackingBackgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="7xv-t5-We2"/>
+                                        <outlet property="delegate" destination="-1" id="Jy9-BZ-zE9"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="KJu-Y4-csj" secondAttribute="trailing" id="22V-i8-6yv"/>
+                                <constraint firstAttribute="bottom" secondItem="KJu-Y4-csj" secondAttribute="bottom" id="J8T-en-4Yf"/>
+                                <constraint firstItem="KJu-Y4-csj" firstAttribute="leading" secondItem="tfw-DP-gNk" secondAttribute="leading" id="NU6-mQ-eVa"/>
+                                <constraint firstItem="KJu-Y4-csj" firstAttribute="top" secondItem="tfw-DP-gNk" secondAttribute="top" id="dIA-cb-3WG"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wjn-ZA-i76" userLabel="Delete Account">
+                            <rect key="frame" x="25" y="370" width="270" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KI2-Ve-PIw">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="30"/>
+                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="DELETE ACCOUNT" backgroundImage="reveal menu sign out.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="deleteAccountButtonAction:" destination="-1" eventType="touchUpInside" id="iW7-MH-JCm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="lZi-mc-l1g"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tfw-DP-gNk" secondAttribute="trailing" constant="25" id="9MM-g6-Wgo"/>
+                        <constraint firstItem="Wjn-ZA-i76" firstAttribute="top" secondItem="tfw-DP-gNk" secondAttribute="bottom" constant="8" id="9if-QK-vjs"/>
+                        <constraint firstItem="Wjn-ZA-i76" firstAttribute="top" secondItem="tfw-DP-gNk" secondAttribute="bottom" constant="8" id="AFx-kq-Wk4"/>
+                        <constraint firstItem="tfw-DP-gNk" firstAttribute="leading" secondItem="GGS-Pt-nCo" secondAttribute="leading" constant="25" id="Ztu-bD-tFX"/>
+                        <constraint firstItem="tfw-DP-gNk" firstAttribute="top" secondItem="GGS-Pt-nCo" secondAttribute="top" constant="15" id="c7h-cf-7lJ"/>
+                        <constraint firstAttribute="bottom" secondItem="Wjn-ZA-i76" secondAttribute="bottom" constant="16" id="fxm-X1-4Di"/>
+                        <constraint firstItem="Wjn-ZA-i76" firstAttribute="leading" secondItem="GGS-Pt-nCo" secondAttribute="leading" constant="25" id="s10-xO-LYI"/>
+                        <constraint firstAttribute="trailing" secondItem="Wjn-ZA-i76" secondAttribute="trailing" constant="25" id="t1V-gU-OXP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GGS-Pt-nCo" firstAttribute="leading" secondItem="fET-C9-ZYg" secondAttribute="leading" id="PLf-jk-hFb"/>
+                <constraint firstAttribute="trailing" secondItem="GGS-Pt-nCo" secondAttribute="trailing" id="qDo-Oc-Ksw"/>
+                <constraint firstItem="GGS-Pt-nCo" firstAttribute="top" secondItem="fET-C9-ZYg" secondAttribute="top" id="vmC-jC-09B"/>
+                <constraint firstAttribute="bottom" secondItem="GGS-Pt-nCo" secondAttribute="bottom" id="xtR-sf-CGq"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-387" y="179"/>
+        </view>
+        <view contentMode="scaleToFill" id="RdU-QZ-fOO" userLabel="View - Profile">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqJ-uG-BhX">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="276"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbw-9Q-soh">
+                            <rect key="frame" x="0.0" y="-45" width="270" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elV-y8-njx" userLabel="Edit Button Container View">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoI-re-Mgj">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="EDIT PROFILE">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="EditProfileButtonAction:" destination="-1" eventType="touchUpInside" id="0OU-G7-aMf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGq-dB-cQd">
+                                    <rect key="frame" x="225" y="0.0" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j9C-hj-WPo" userLabel="Help View">
+                            <rect key="frame" x="0.0" y="46" width="270" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit your profile." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udg-AX-YgA">
+                                    <rect key="frame" x="18" y="0.0" width="234" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Um5-rm-pLH" userLabel="Check-ins Visibility Switch Container View">
+                            <rect key="frame" x="0.0" y="69" width="270" height="45"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALL CHECK-INS PUBLIC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFQ-5T-kyK">
+                                    <rect key="frame" x="15" y="7" width="168" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z8w-TO-iiX">
+                                    <rect key="frame" x="206" y="7" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="switchCheckinPublicButtonAction:" destination="-1" eventType="valueChanged" id="Q50-g2-D2O"/>
+                                    </connections>
+                                </switch>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1WV-Qx-8rt" userLabel="Help View">
+                            <rect key="frame" x="0.0" y="115" width="270" height="36"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ner-we-3p5">
+                                    <rect key="frame" x="18" y="0.0" width="234" height="36"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="If you enable check-ins public, everyone can see your check-ins.">
+                                            <attributes>
+                                                <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqi-S6-Blp" userLabel="Profile Public Visibility Switch Container View">
+                            <rect key="frame" x="0.0" y="152" width="270" height="45"/>
+                            <subviews>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZqJ-vq-1kC">
+                                    <rect key="frame" x="206" y="7" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="switchProfilePublicButtonAction:" destination="-1" eventType="valueChanged" id="S9h-6Z-bNM"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DISPLAY PUBLIC PROFILE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opY-AF-8B2">
+                                    <rect key="frame" x="15" y="7" width="168" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ydm-xM-DxK" userLabel="Help View">
+                            <rect key="frame" x="0.0" y="194" width="270" height="36"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2r-cb-H4c">
+                                    <rect key="frame" x="18" y="0.0" width="234" height="36"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="When your account is private , you will need to approve all follow requests.">
+                                            <attributes>
+                                                <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tx6-WY-da9" userLabel="Signout Button Container View">
+                            <rect key="frame" x="0.0" y="231" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-mn-bfo">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="SIGN OUT">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="signoutButtonAction:" destination="-1" eventType="touchUpInside" id="MaO-Xh-ZVM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYx-qk-iP7">
+                                    <rect key="frame" x="225" y="0.0" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="276" id="5yh-1a-Gmc"/>
+                        <constraint firstAttribute="width" constant="270" id="hGm-ao-ChC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xqJ-uG-BhX" firstAttribute="leading" secondItem="RdU-QZ-fOO" secondAttribute="leading" id="1rw-3J-j7G"/>
+                <constraint firstItem="xqJ-uG-BhX" firstAttribute="top" secondItem="RdU-QZ-fOO" secondAttribute="top" id="DVS-dB-zcU"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-2" y="837"/>
+        </view>
+        <view contentMode="scaleToFill" id="qtF-q5-fBu" userLabel="View - Priends">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AX-oe-DLe">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-bD-4jL" userLabel="Submit Button Container View">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGF-Fe-IaR">
+                                    <rect key="frame" x="225" y="0.0" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzg-fv-1GN">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="FIND FRIENDS">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="findFriendsButtonAction:" destination="-1" eventType="touchUpInside" id="adX-4I-EE0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="0LZ-Mm-R7t"/>
+                        <constraint firstAttribute="height" constant="45" id="79v-5q-pLQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8AX-oe-DLe" firstAttribute="leading" secondItem="qtF-q5-fBu" secondAttribute="leading" id="Urr-rc-1Ms"/>
+                <constraint firstItem="8AX-oe-DLe" firstAttribute="top" secondItem="qtF-q5-fBu" secondAttribute="top" id="o1M-Ng-INs"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="768" y="837"/>
+        </view>
+        <view contentMode="scaleToFill" id="rg7-7z-mTy" userLabel="View - Share">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9d6-lD-SaJ">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="203"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQ6-AO-KGE">
+                            <rect key="frame" x="0.0" y="-47" width="270" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1BU-w6-FgY" userLabel="Share Shrync">
+                            <rect key="frame" x="0.0" y="-1" width="270" height="46"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdY-7u-89Q" userLabel="Shrync">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="46"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Shrync">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="shryncShareButtonAction:" destination="-1" eventType="touchUpInside" id="ssa-EX-dGf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoK-rR-UD0">
+                                    <rect key="frame" x="225" y="1" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0td-ua-7At" userLabel="Help View">
+                            <rect key="frame" x="0.0" y="46" width="270" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share app to Facebook, Twitter, Messages..etc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVJ-Yh-7Gm">
+                                    <rect key="frame" x="8" y="0.0" width="258" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dar-jr-zcr" userLabel="Share Facebook">
+                            <rect key="frame" x="0.0" y="68" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8J-qQ-ez7" userLabel="Facebook">
+                                    <rect key="frame" x="166" y="0.0" width="104" height="45"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="     Link     ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="shareFacebookButtonAction:" destination="-1" eventType="touchUpInside" id="aYi-g4-ewo"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMC-yc-MTF">
+                                    <rect key="frame" x="0.0" y="22" width="158" height="23"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="not connected" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBn-Vv-ABG" userLabel="Connected">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vve-dM-5d2">
+                                    <rect key="frame" x="0.0" y="11" width="158" height="23"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="       Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyA-xr-i8n" userLabel="Facebook">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfP-VL-dOn" userLabel="Help View">
+                            <rect key="frame" x="0.0" y="114" width="270" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect with your Facebook account." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8A-SA-CF9">
+                                    <rect key="frame" x="18" y="0.0" width="234" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fuW-y6-du0" userLabel="Share Twitter">
+                            <rect key="frame" x="0.0" y="136" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5g-fR-E0C" userLabel="Twitter">
+                                    <rect key="frame" x="166" y="0.0" width="104" height="45"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="     Link     ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="shareTwitterButtonAction:" destination="-1" eventType="touchUpInside" id="x8q-MA-9jQ"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpL-pT-dc3">
+                                    <rect key="frame" x="0.0" y="23" width="158" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="not connected" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLl-CH-Svz" userLabel="Connected">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="21"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4x-Ay-h7a">
+                                    <rect key="frame" x="0.0" y="11" width="158" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="       Twitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1K-Bf-Adz" userLabel="Twitter">
+                                            <rect key="frame" x="0.0" y="1" width="158" height="21"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3M-fJ-06Y" userLabel="Help View">
+                            <rect key="frame" x="0.0" y="182" width="270" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect with your Twitter account." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HC-Am-Awa">
+                                    <rect key="frame" x="18" y="0.0" width="234" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="IVN-c3-wQX"/>
+                        <constraint firstAttribute="height" constant="203" id="hFV-6o-bdd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9d6-lD-SaJ" firstAttribute="leading" secondItem="rg7-7z-mTy" secondAttribute="leading" id="WAI-kl-Taa"/>
+                <constraint firstItem="9d6-lD-SaJ" firstAttribute="top" secondItem="rg7-7z-mTy" secondAttribute="top" id="YH8-Ok-tv9"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="381" y="179"/>
+        </view>
+        <view contentMode="scaleToFill" id="mow-K3-0LI" userLabel="View - Support and Feedback">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Z5-NM-W9F">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="92"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vu5-YC-3d7" userLabel="Shrync Feedback">
+                            <rect key="frame" x="0.0" y="47" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfw-6E-quV" userLabel="Feedback">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="FEEDBACK">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="feedbackButtonAction:" destination="-1" eventType="touchUpInside" id="SuB-NR-sZS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PM-iL-cJR">
+                                    <rect key="frame" x="225" y="0.0" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FoZ-ff-GgZ" userLabel="Shrync Support">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="46"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-5t-26C" userLabel="Support">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="46"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="SUPPORT">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="supportButtonAction:" destination="-1" eventType="touchUpInside" id="ftK-9K-op0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db8-t2-2Wq">
+                                    <rect key="frame" x="225" y="1" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="Did-jd-2mR"/>
+                        <constraint firstAttribute="height" constant="92" id="Xgd-rH-10A"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5Z5-NM-W9F" firstAttribute="leading" secondItem="mow-K3-0LI" secondAttribute="leading" id="6eL-0x-EXV"/>
+                <constraint firstItem="5Z5-NM-W9F" firstAttribute="top" secondItem="mow-K3-0LI" secondAttribute="top" id="KbY-a3-SJQ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-2" y="179"/>
+        </view>
+        <view contentMode="scaleToFill" id="5wg-2Z-fu2" userLabel="View - Rate">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLp-U4-hzB">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="66"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-Kd-QZL">
+                            <rect key="frame" x="0.0" y="-47" width="270" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-Ys-Uai" userLabel="Submit Button Container View">
+                            <rect key="frame" x="0.0" y="-1" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qv-M6-qDb">
+                                    <rect key="frame" x="225" y="0.0" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJq-8q-YNm">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="RATE SHRYNC">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="rateButtonAction:" destination="-1" eventType="touchUpInside" id="ZE6-g0-EMa"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vxt-ad-G2d" userLabel="Help View">
+                            <rect key="frame" x="0.0" y="45" width="270" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate SHRYNC app in Apple store." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc4-HA-WZC">
+                                    <rect key="frame" x="18" y="0.0" width="234" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="6Re-1P-RoC"/>
+                        <constraint firstAttribute="width" constant="270" id="8KA-we-yfI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wLp-U4-hzB" firstAttribute="top" secondItem="5wg-2Z-fu2" secondAttribute="top" id="YgE-PL-iO8"/>
+                <constraint firstItem="wLp-U4-hzB" firstAttribute="leading" secondItem="5wg-2Z-fu2" secondAttribute="leading" id="gTg-nC-Yin"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="386" y="837"/>
+        </view>
+        <view contentMode="scaleToFill" id="vXy-bO-mKJ" userLabel="View - App Information">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3R-3u-EBh">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="183"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJL-iw-q7r">
+                            <rect key="frame" x="0.0" y="-46" width="270" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-mB-Ojq" userLabel="Privacy Button Container View">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYs-rp-GVP">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Privacy">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="privacyButtonAction:" destination="-1" eventType="touchUpInside" id="DUi-yr-g8A"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bG-dU-6q3">
+                                    <rect key="frame" x="225" y="0.0" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Btl-jR-Far" userLabel="Terms of use Button Container View">
+                            <rect key="frame" x="0.0" y="46" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bh-1X-8z3">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Terms of use">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="termsofuseButtonAction:" destination="-1" eventType="touchUpInside" id="DP1-eG-HAK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sp-Ia-3ow">
+                                    <rect key="frame" x="225" y="0.0" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-Rc-dkc" userLabel="About Button Container View">
+                            <rect key="frame" x="0.0" y="92" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McB-Jb-UJI">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="About">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="aboutButtonAction:" destination="-1" eventType="touchUpInside" id="eaD-1f-Txb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKs-og-PvR">
+                                    <rect key="frame" x="225" y="0.0" width="45" height="45"/>
+                                    <state key="normal" image="disclousure arrow.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Kr-V3-KQG" userLabel="Submit Button Container View">
+                            <rect key="frame" x="0.0" y="138" width="270" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vw6-JF-BCB">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Version">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfv-cW-5Ih">
+                                    <rect key="frame" x="161" y="12" width="90" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="SWf-mJ-8kE"/>
+                        <constraint firstAttribute="height" constant="183" id="xjm-OI-RAF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="g3R-3u-EBh" firstAttribute="top" secondItem="vXy-bO-mKJ" secondAttribute="top" id="eMP-R9-h5t"/>
+                <constraint firstItem="g3R-3u-EBh" firstAttribute="leading" secondItem="vXy-bO-mKJ" secondAttribute="leading" id="kr3-Fq-r8r"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="386" y="837"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="disclousure arrow.png" width="8" height="12"/>
+        <image name="reveal menu sign out.png" width="2" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
